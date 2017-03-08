@@ -24,7 +24,7 @@ LABEL com.redhat.component="rh-nginx110-docker" \
 ENV NGINX_CONFIGURATION_PATH=/opt/app-root/etc/nginx.d
 
 RUN yum install -y yum-utils && \
-    yum-config-manager --enable rhel-server-rhscl-7-rpms && \
+    yum-config-manager --enable rhel-server-rhscl-beta-7-rpms && \
     yum-config-manager --enable rhel-7-server-optional-rpms && \
     yum-config-manager --enable rhel-7-server-ose-3.2-rpms && \
     INSTALL_PKGS="nss_wrapper bind-utils gettext hostname rh-nginx110 rh-nginx110-nginx" && \
